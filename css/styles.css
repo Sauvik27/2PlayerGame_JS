@@ -1,0 +1,107 @@
+body{
+  font-family: Montserrat;
+}
+.nav-item{
+  font-weight: lighter;
+  padding-top: 2%;
+}
+.navbar-brand{
+  font-size: 2rem;
+  color: #334443;
+  font-weight: 900;
+  padding-top: 1%;
+}
+.topbar{
+  background-color: #fffbdf;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+h1{
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: center;
+  padding: 2% 0 2%;
+  color: #34656d;
+}
+h2{
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 1% 0 1%;
+}
+hr{
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+.playerTurn{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.player1{
+  color: #4aa96c;
+}
+.player2{
+  color: #ff7171;
+}
+.mainBox{
+  width: 300px;
+  height: 300px;
+  margin-bottom: 2%;
+  margin-left: 31px;
+  margin-right: 31px;
+  border-radius: 15px;
+}
+.smallBox{
+  background-color: #f7f3f0;
+  width: 100px;
+  height: 100px;
+  border-width: 0;
+}
+.smallBox:hover{
+  background-color: #e0d9d3;
+}
+.box1{
+  border-top-left-radius: 15px;
+}
+.box3{
+  border-top-right-radius: 15px;
+}
+.box7{
+  border-bottom-left-radius: 15px;
+}
+.box9{
+  border-bottom-right-radius: 15px;
+}
+.cross{
+  font-size: 3rem;
+  font-weight: 600;
+}
+.dice{
+  font-size: 15rem;
+  color: #ff8474;
+}
+.dice:hover{
+  color: #e3796b;
+}
+.play{
+  font-size: 5rem;
+  color: #f2cf41;
+}
+.play:hover{
+  color: #e8c261;
+}
+/* .contain{
+  margin-left: 100px;
+  margin-right: 100px;
+} */
+#winner{
+  background-color: #c6ffc1;
+  border-radius: 15px;
+  padding: 2%;
+}
+.row{
+  justify-content: center;
+  margin-right: 0;
+}

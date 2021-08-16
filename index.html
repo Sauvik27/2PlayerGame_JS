@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>2playerGame</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <script src="https://kit.fontawesome.com/40017ba519.js" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <!-- navbar -->
+  <section class="topbar" id="title">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#" style="color: #45526c;">2PlayerGames</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#tictactoe"><button type="button" class="btn btn-outline-info btn-lg">TicTacToe</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#diceGame"><button type="button" class="btn btn-outline-dark btn-lg">Dice</button></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </div>
+  </section>
+
+
+  <section id="tictactoe">
+    <h1>TicTacToe</h1>
+  </section>
+
+  <section>
+    <div class="row">
+      <div class="playerTurn">
+        <h2 class="player1">Player 1 turn</h2>
+      </div>
+        <div class="mainBox">
+          <div class="row">
+            <button class="smallBox box1" onclick="getTicValue(0)"><i class="cross"></i></button>
+            <div style="border-left:1px solid #e0d9d3;height:100px"></div>
+            <button class="smallBox box2" onclick="getTicValue(1)"><i class="cross"></i></button>
+            <div style="border-left:1px solid #e0d9d3;height:100px"></div>
+            <button class="smallBox box3" onclick="getTicValue(2)"><i class="cross"></i></button>
+          </div>
+          <hr>
+          <div class="row">
+            <button class="smallBox" onclick="getTicValue(3)"><i class="cross"></i></button>
+            <div style="border-left:1px solid #e0d9d3;height:100px"></div>
+            <button class="smallBox" onclick="getTicValue(4)"><i class="cross"></i></button>
+            <div style="border-left:1px solid #e0d9d3;height:100px"></div>
+            <button class="smallBox" onclick="getTicValue(5)"><i class="cross"></i></button>
+          </div>
+          <hr>
+          <div class="row">
+            <button class="smallBox box7" onclick="getTicValue(6)"><i class="cross"></i></button>
+            <div style="border-left:1px solid #e0d9d3;height:100px"></div>
+            <button class="smallBox" onclick="getTicValue(7)"><i class="cross"></i></button>
+            <div style="border-left:1px solid #e0d9d3;height:100px"></div>
+            <button class="smallBox box9" onclick="getTicValue(8)"><i class="cross"></i></button>
+          </div>
+        </div>
+      <div class="playerTurn">
+        <h2 class="player2">Player 2 turn</h2>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="winner">
+    <div class="row">
+          <h2 id="winner1">Winner is Player</h2>
+    </div>
+
+  </section>
+
+
+  <section id="diceGame">
+    <h1>Dice Game</h1>
+  </section>
+
+  <section>
+      <div class="row">
+          <button class="btn" onclick="diceChange(0)"><i class="fas fa-dice-one dice"></i></button>
+          <button class="btn" onclick="diceChange(1)"><i class="fas fa-dice-one dice"></i></button>
+      </div>
+  </section>
+
+
+  <section id="winner">
+    <div class="row">
+          <button class="btn" onclick="winner()"><i class="fas fa-play play"></i></button>
+          <h2 id="winner2">Winner is Player</h2>
+    </div>
+
+  </section>
+
+
+
+  <script src="js/index.js" charset="utf-8"></script>
+</body>
+
+</html>
